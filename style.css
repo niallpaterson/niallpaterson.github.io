@@ -2,7 +2,7 @@
 body {
     background-color: black;
 }
-}
+
 
 #work-in-progress-header {
     width: 100vw;
@@ -121,8 +121,6 @@ table {
 /* -------------------------- */ 
 /* ------ 2.3: Desktop ------ */
 /* -------------------------- */ 
-
-@media
 
 
 
