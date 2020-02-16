@@ -1,4 +1,9 @@
 
+body {
+    background-color: black;
+}
+}
+
 #work-in-progress-header {
     width: 100vw;
     height: 100vh;
@@ -8,14 +13,14 @@
 #work-in-progress-content {
     color: white;
     text-align: center;
-    padding: 30vh;
-    font-size: 6vh;
-    line-height: 10vh;
+    padding-top: 20vh;
+    font-size: 5vw;
+    line-height: 2;
 }
 
 .fas.fa-hammer {
     color: white;
-    font-size: 6vh;
+    font-size: 6vw;
 }
 
 /*_________TABLE OF CONTENTS________\*
