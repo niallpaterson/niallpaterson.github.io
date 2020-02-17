@@ -1,5 +1,5 @@
 
-body {
+#in-progress-body {
     background-color: black;
 }
 
@@ -30,20 +30,10 @@ body {
    2.0 - Responsive Styles
         2.0 - Mobile
             2.0.0 - 
-        2.1 - Tablet Vertical
-            2.0.0 - 
-        2.2 - Tablet Horizonal
-            2.0.0 - 
-        2.3 - Desktop
-            2.0.0 - 
-
-    RETHINK THIS: USE FLEXBOX! 
-
-    See https://www.youtube.com/watch?v=k32voqQhODc
-
-
-
-    
+        2.1 - Desktop
+            2.1.0 - 
+        2.2 - Widescreen
+            2.2.0 -
 
 \*‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
 
@@ -71,6 +61,7 @@ time, mark, audio, video {
     font: inherit;
     vertical-align: baseline;
     }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -100,6 +91,31 @@ table {
 /* ========================== */ 
 
 
+/* TODO: Use google font, set system backup */
+
+body {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+main {
+    /* Colors */
+    background-color:rgb(255, 255, 255);
+    color: rgb(31, 31, 31);
+}
+header {
+    /* Colors */
+    background-color: rgb(31, 31, 31);
+    color: rgb(255, 255, 255);
+}
+
+.my-name {
+    font-size: 7vw;
+    text-align: right;
+    font-weight: 700;
+}
+
+
+
 
 /* ========================== */ 
 /* = 2.0: Responsive Styles = */
@@ -111,16 +127,91 @@ table {
 /* -------------------------- */ 
 
 /* -------------------------- */ 
-/* -- 2.1: Tablet Vertical -- */
+/* ------ 2.1: Desktop ------ */
 /* -------------------------- */ 
 
-/* -------------------------- */ 
-/* - 2.2: Tablet Horizontal - */
-/* -------------------------- */ 
 
-/* -------------------------- */ 
-/* ------ 2.3: Desktop ------ */
-/* -------------------------- */ 
+/*______________________________
+x.x HEADER
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
 
+
+/* Name & Description
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
+
+header {
+    /* Box */
+    width: 40vw;
+    height: 100vh;
+    position: fixed;
+}
+
+
+.header-description {
+    /* Box */
+    margin: 3vh 3vw 3vh 3vw;
+    /* Font */ 
+    line-height: 1.25;
+    font-size: 2.3vw;
+    text-align: right;
+}
+
+.my-name {
+    /* Box */
+   margin: 2vh 1vw 0 0;
+   position: relative;
+}
+
+/* Nav and Social Media Buttons
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
+.nav-links {
+    /* Box */
+    margin: 2vh 2vw 2vh 2vw;
+    text-align: right;
+}
+
+    .nav-links li {
+        /* Box */
+        margin-top: 1vh;
+    }
+
+        .nav-links li button {
+            background-color: rgb(31, 31, 31);
+            color: rgb(255, 255, 255);
+            font-size: 3.5vh;
+            border: none;
+        }
+
+.social-media-links {
+    /* Box */
+    color: green;
+    text-align: center;
+    /* Icons */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.social-media-links li {
+    /* Icons */
+}
+
+
+/* Credits Footer
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
+
+/*______________________________
+x.x MAIN
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
+
+main {
+    /* Box */
+    width: 60vw;
+    float: right;
+}
+
+/* ----------------------------- */ 
+/* ------ 2.4: WideScreen ------ */
+/* ----------------------------- */ 
 
 
