@@ -113,7 +113,7 @@ header {
 
 .my-name {
     /* Text */ 
-    font-size: 8vw;
+    font-size: 7vw;
     font-weight: 700;
     line-height: 1.1;
     letter-spacing: 2;
@@ -162,8 +162,8 @@ header {
     /* Font */ 
     line-height: 1.25;
     letter-spacing: 1;
-    font-size: 4vh;
-    font-weight: 00;
+    font-size: 3.5vw;
+    font-weight: 400;
     color: rgb(255, 220, 5);
 }
 
@@ -187,14 +187,14 @@ header {
             border: none;
             /* Text */
             color: rgb(255, 255, 255);
-            font-size: 3.5vh;
+            font-size: 3.5vw;
             letter-spacing: 2;
         }
 
         .nav-links li button:hover {
             /* Text */
             color: rgb(255, 220, 5);
-            font-size: 3.8vh;
+            font-size: 3.8vw;
         }
 .social-media-links {
     /* Box */
@@ -218,7 +218,7 @@ header {
     /* Box */
     position: absolute;
     bottom: 1vh;
-    left: 3vh;
+    left: 3vw;
     right: 2vw;
     height: 3vh;
     width: 40vw;
