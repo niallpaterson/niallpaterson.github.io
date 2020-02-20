@@ -98,6 +98,8 @@ table {
 
 body {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
+    /* Disables bounce on scroll */
+    overflow: hidden; 
 }
 
 main {
@@ -113,7 +115,7 @@ header {
 
 .my-name {
     /* Text */ 
-    font-size: 7vw;
+    font-size: 8vh;
     font-weight: 700;
     line-height: 1.1;
     letter-spacing: 2;
@@ -141,11 +143,11 @@ x.x HEADER
 
 /* Name & Description
 ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
-
+/* TODO: switch viewport font units on sidebar. Research em/rem units */ 
 
 header {
     /* Box */
-    width: 40vw;
+    width: 35vw;
     height: 100vh;
     position: fixed;
 }
@@ -156,13 +158,13 @@ header {
    position: relative;
 }
 
-.header-description {
+.my-description {
     /* Box */
-    margin: 4vh 3vw 3vh 3vw;
+    margin: 4vh 3vw 5vh 3vw;
     /* Font */ 
     line-height: 1.25;
     letter-spacing: 1;
-    font-size: 3.5vw;
+    font-size: 3.25vh;
     font-weight: 400;
     color: rgb(255, 220, 5);
 }
@@ -172,13 +174,13 @@ header {
 ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
 .nav-links {
     /* Box */
-    margin: 4vh 2vw 2vh 2vw;
+    margin: 5vh 2vw 5vh 2vw;
 
 }
 
     .nav-links li {
         /* Box */
-        margin-top: 1.25vh;
+        margin-top: 1vh;
     }
 
         .nav-links li button {
@@ -187,34 +189,49 @@ header {
             border: none;
             /* Text */
             color: rgb(255, 255, 255);
-            font-size: 3.5vw;
+            font-size: 3.5vh;
             letter-spacing: 2;
         }
 
         .nav-links li button:hover {
             /* Text */
             color: rgb(255, 220, 5);
-            font-size: 3.8vw;
+            font-size: 3.8vh;
         }
+
 .social-media-links {
     /* Box */
     color: green;
     text-align: center;
-    margin-top: 4.5vh;
+    margin-top: 10vh;
     /* Icons */
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-evenly; 
 }
 
-.social-media-links li {
-    /* Icons */
-}
+/* TODO: set maximum distance for space-evenly */
 
 
-/* Credits Footer
-‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
-.credits {
+    .social-media-links li button {
+       /* Sphere */
+       border: 2px solid white;
+       border-radius: 50%;
+       width: 6vh;
+       height: 6vh;
+       /* centre icons */
+       line-height: 5vh;
+       /* icons */
+       font-size: 3vh;
+       text-align: center;
+
+    }
+
+
+/* Copywrite Footer
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
+
+.footer {
     /* Box */
     position: absolute;
     bottom: 1vh;
@@ -223,7 +240,7 @@ header {
     height: 3vh;
     width: 40vw;
     /* Text */
-    font-size: 1.25vw; 
+    font-size: 1.5vh; 
     font-weight: 500;
 }
 
@@ -234,9 +251,31 @@ x.x MAIN
 
 main {
     /* Box */
-    width: 60vw;
+    width: 55vw;
+    height: 100vw;
     float: right;
 }
+
+.about-me {
+    /* Box */
+    margin: 5vh 5vw;
+}
+
+    .about-me h3 {
+    /* Text */
+    font-weight: 600;
+    font-size: 4vh;   
+    margin-bottom: 2vw;
+    color: rgb(31, 31, 31);
+    }
+
+    .about-me p {
+    /* Text */
+    font-size: 2.5vh;  
+    text-align: justify; 
+    line-height: 1.5;  
+    color: rgb(31, 31, 31);
+    }
 
 /* ----------------------------- */ 
 /* ------ 2.4: WideScreen ------ */
