@@ -1,4 +1,7 @@
 
+/* Work in progress placeholders
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
+
 #in-progress-body {
     background-color: black;
 }
@@ -109,12 +112,11 @@ header {
 }
 
 .my-name {
-    font-size: 7vw;
-    text-align: right;
+    /* Text */ 
+    font-size: 8vw;
     font-weight: 700;
+    line-height: 1.1;
 }
-
-
 
 
 /* ========================== */ 
@@ -139,6 +141,7 @@ x.x HEADER
 /* Name & Description
 ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
 
+
 header {
     /* Box */
     width: 40vw;
@@ -146,28 +149,28 @@ header {
     position: fixed;
 }
 
+.my-name {
+    /* Box */
+   margin: 5vh 3vw;
+   position: relative;
+}
 
 .header-description {
     /* Box */
     margin: 3vh 3vw 3vh 3vw;
     /* Font */ 
     line-height: 1.25;
-    font-size: 2.3vw;
-    text-align: right;
+    font-size: 5vw;
+    font-weight: 500;
 }
 
-.my-name {
-    /* Box */
-   margin: 2vh 1vw 0 0;
-   position: relative;
-}
 
 /* Nav and Social Media Buttons
 ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
 .nav-links {
     /* Box */
     margin: 2vh 2vw 2vh 2vw;
-    text-align: right;
+
 }
 
     .nav-links li {
@@ -186,6 +189,7 @@ header {
     /* Box */
     color: green;
     text-align: center;
+    margin-top: 5vh;
     /* Icons */
     display: flex;
     flex-direction: row;
@@ -199,6 +203,19 @@ header {
 
 /* Credits Footer
 ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
+.credits {
+    /* Box */
+    position: absolute;
+    bottom: 0;
+    left: 3vh;
+    right: 2vw;
+    height: 3vh;
+    width: 40vw;
+    /* Text */
+    font-size: 2vw; 
+    font-weight: 400;
+}
+
 
 /*______________________________
 x.x MAIN
