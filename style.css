@@ -116,6 +116,7 @@ header {
     font-size: 8vw;
     font-weight: 700;
     line-height: 1.1;
+    letter-spacing: 2;
 }
 
 
@@ -157,11 +158,13 @@ header {
 
 .header-description {
     /* Box */
-    margin: 3vh 3vw 3vh 3vw;
+    margin: 4vh 3vw 3vh 3vw;
     /* Font */ 
     line-height: 1.25;
-    font-size: 5vw;
-    font-weight: 500;
+    letter-spacing: 1;
+    font-size: 4vh;
+    font-weight: 00;
+    color: rgb(255, 220, 5);
 }
 
 
@@ -169,27 +172,35 @@ header {
 ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
 .nav-links {
     /* Box */
-    margin: 2vh 2vw 2vh 2vw;
+    margin: 4vh 2vw 2vh 2vw;
 
 }
 
     .nav-links li {
         /* Box */
-        margin-top: 1vh;
+        margin-top: 1.25vh;
     }
 
         .nav-links li button {
+            /* Box */
             background-color: rgb(31, 31, 31);
+            border: none;
+            /* Text */
             color: rgb(255, 255, 255);
             font-size: 3.5vh;
-            border: none;
+            letter-spacing: 2;
         }
 
+        .nav-links li button:hover {
+            /* Text */
+            color: rgb(255, 220, 5);
+            font-size: 3.8vh;
+        }
 .social-media-links {
     /* Box */
     color: green;
     text-align: center;
-    margin-top: 5vh;
+    margin-top: 4.5vh;
     /* Icons */
     display: flex;
     flex-direction: row;
@@ -206,14 +217,14 @@ header {
 .credits {
     /* Box */
     position: absolute;
-    bottom: 0;
+    bottom: 1vh;
     left: 3vh;
     right: 2vw;
     height: 3vh;
     width: 40vw;
     /* Text */
-    font-size: 2vw; 
-    font-weight: 400;
+    font-size: 1.25vw; 
+    font-weight: 500;
 }
 
 
