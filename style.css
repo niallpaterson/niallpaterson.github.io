@@ -187,13 +187,17 @@ header {
             /* Box */
             background-color: rgb(31, 31, 31);
             border: none;
+        }
+
+        .nav-links li button a {
             /* Text */
             color: rgb(255, 255, 255);
             font-size: 3.5vh;
             letter-spacing: 2;
+            text-decoration: none;
         }
 
-        .nav-links li button:hover {
+        .nav-links li button a:hover {
             /* Text */
             color: rgb(255, 220, 5);
             font-size: 3.8vh;
@@ -235,12 +239,12 @@ header {
     /* Box */
     position: absolute;
     bottom: 1vh;
-    left: 3vw;
+    left: 2vw;
     right: 2vw;
     height: 3vh;
     width: 40vw;
     /* Text */
-    font-size: 1.5vh; 
+    font-size: 2vh; 
     font-weight: 500;
 }
 
@@ -256,15 +260,23 @@ main {
     float: right;
 }
 
-/* Main content h tags */ 
+/* Main content h and p tags */ 
 
-h3 {
+h2 {
     /* Text */
     font-weight: 600;
-    font-size: 4vh;   
+    font-size: 5vh;   
     margin-bottom: 2vw;
     color: rgb(31, 31, 31);
     }
+
+h3 {
+    /* Text */ 
+    font-weight: 600;
+    font-size: 3.5vh;   
+    margin-bottom: 2vw;
+    color: rgb(31, 31, 31);
+}
 
 h4 {
     /* Text */ 
@@ -273,6 +285,14 @@ h4 {
     margin-bottom: 2vw;
     color: rgb(31, 31, 31);
 }
+
+p {
+    /* Text */
+    font-size: 2.5vh;  
+    text-align: justify; 
+    line-height: 1.5;  
+    color: rgb(31, 31, 31);
+    }
 
 /* About Me 
 ‾‾‾‾‾‾‾‾‾‾‾‾*/ 
@@ -283,14 +303,6 @@ h4 {
     margin: 5vh 5vw;
 }
 
-    .about-me p {
-    /* Text */
-    font-size: 2.5vh;  
-    text-align: justify; 
-    line-height: 1.5;  
-    color: rgb(31, 31, 31);
-    }
-
 
 /* Philosophy
 ‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/ 
@@ -299,6 +311,26 @@ h4 {
 .philosophy {
     /* Box */
     margin: 5vh 5vw;
+    overflow: auto;
+    height: 90vh;
+}
+
+.academic-articles {
+    /* Box */
+    margin-top: 5vh;
+}
+
+.article {
+    margin-bottom: 5vh;
+}
+
+.article-header {
+    margin-bottom: 2vh;
+}
+
+.publication-status {
+    font-style: italic;
+    margin-bottom: 1vh;
 }
 
 /* ----------------------------- */ 
