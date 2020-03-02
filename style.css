@@ -200,7 +200,7 @@ header {
         .nav-links li button a:hover {
             /* Text */
             color: rgb(255, 220, 5);
-            font-size: 3.8vh;
+            font-size: 3.6vh;
         }
 
 .social-media-links {
@@ -224,13 +224,24 @@ header {
        width: 6vh;
        height: 6vh;
        /* centre icons */
-       line-height: 5vh;
+       line-height: 4.75vh;
        /* icons */
        font-size: 3vh;
        text-align: center;
 
     }
 
+        .social-media-links button:hover {
+            /* Box */
+            background-color: rgb(255, 220, 5);
+            border-color:  rgb(255, 220, 5);
+            width: 6.25vh;
+            height: 6.25vh;
+            /* centre icons */
+            line-height: 5.5vh;
+            /* icons */
+            font-size: 3.25vh;
+        }
 
 /* Copywrite Footer
 ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
