@@ -246,7 +246,7 @@ header {
 
 
 /*______________________________
-x.x MAIN
+x.x Main content boxes
 ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
 
 main {
@@ -256,18 +256,32 @@ main {
     float: right;
 }
 
-.about-me {
-    /* Box */
-    margin: 5vh 5vw;
-}
+/* Main content h tags */ 
 
-    .about-me h3 {
+h3 {
     /* Text */
     font-weight: 600;
     font-size: 4vh;   
     margin-bottom: 2vw;
     color: rgb(31, 31, 31);
     }
+
+h4 {
+    /* Text */ 
+    font-weight: 500;
+    font-size: 3vh;   
+    margin-bottom: 2vw;
+    color: rgb(31, 31, 31);
+}
+
+/* About Me 
+‾‾‾‾‾‾‾‾‾‾‾‾*/ 
+
+
+.about-me {
+    /* Box */
+    margin: 5vh 5vw;
+}
 
     .about-me p {
     /* Text */
@@ -276,6 +290,16 @@ main {
     line-height: 1.5;  
     color: rgb(31, 31, 31);
     }
+
+
+/* Philosophy
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/ 
+
+
+.philosophy {
+    /* Box */
+    margin: 5vh 5vw;
+}
 
 /* ----------------------------- */ 
 /* ------ 2.4: WideScreen ------ */
