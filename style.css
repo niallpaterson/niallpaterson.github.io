@@ -121,6 +121,11 @@ header {
     letter-spacing: 2;
 }
 
+a {
+    color: rgb(245, 60, 152);
+    text-decoration: none;
+}
+
 
 /* ========================== */ 
 /* = 2.0: Responsive Styles = */
@@ -192,7 +197,7 @@ header {
         .nav-links li button a {
             /* Text */
             color: rgb(255, 255, 255);
-            font-size: 3.5vh;
+            font-size: 3.8vh;
             letter-spacing: 2;
             text-decoration: none;
         }
@@ -200,7 +205,6 @@ header {
         .nav-links li button a:hover {
             /* Text */
             color: rgb(255, 204, 0);
-            font-size: 3.6vh;
         }
 
 .social-media-links {
@@ -221,10 +225,10 @@ header {
        /* Sphere */
        border: 2px solid white;
        border-radius: 50%;
-       width: 6vh;
-       height: 6vh;
+       width: 7vh;
+       height: 7vh;
        /* centre icons */
-       line-height: 4.75vh;
+       line-height: 5vh;
        /* icons */
        font-size: 3vh;
        text-align: center;
@@ -235,12 +239,6 @@ header {
             /* Box */
             background-color :rgb(255, 204, 0);
             border-color:  rgb(255, 204, 0);
-            width: 6.25vh;
-            height: 6.25vh;
-            /* centre icons */
-            line-height: 5.5vh;
-            /* icons */
-            font-size: 3.25vh;
         }
 
 /* Copywrite Footer
@@ -356,6 +354,50 @@ p {
 }
 
 .latex p {
+    margin-bottom: 2vh;
+}
+
+.latex ul {
+    margin-top: 3vh;
+}
+
+.latex-download-links {
+    /* Icons */
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    } 
+
+
+    .latex-download-links li button {
+        /* Box */
+        border: 2px solid white;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        border-color: rgb(31, 31, 31); 
+        margin-right: 1vh;
+        margin-left: 1vh;
+        /* Icons */
+        color: rgb(0, 0, 0);
+        font-size: 3vh;
+    }
+
+    .latex-download-links li button:hover {
+    color: rgb(245, 60, 152);
+    background-color: rgb(31, 31, 31);
+    }
+/* Credits
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/ 
+
+.credits {
+    /* Box */
+    margin: 5vh 5vw;
+    overflow: auto;
+    height: 90vh;
+ }
+
+ .credits p {
     margin-bottom: 2vh;
 }
 
