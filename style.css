@@ -166,7 +166,7 @@ header {
     letter-spacing: 1;
     font-size: 3.25vh;
     font-weight: 400;
-    color: rgb(255, 220, 5);
+    color: rgb(255, 204, 0);
 }
 
 
@@ -199,7 +199,7 @@ header {
 
         .nav-links li button a:hover {
             /* Text */
-            color: rgb(255, 220, 5);
+            color: rgb(255, 204, 0);
             font-size: 3.6vh;
         }
 
@@ -233,8 +233,8 @@ header {
 
         .social-media-links button:hover {
             /* Box */
-            background-color: rgb(255, 220, 5);
-            border-color:  rgb(255, 220, 5);
+            background-color :rgb(255, 204, 0);
+            border-color:  rgb(255, 204, 0);
             width: 6.25vh;
             height: 6.25vh;
             /* centre icons */
@@ -342,6 +342,21 @@ p {
 .publication-status {
     font-style: italic;
     margin-bottom: 1vh;
+}
+
+
+/* LaTeX
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/ 
+
+.latex {
+   /* Box */
+   margin: 5vh 5vw;
+   overflow: auto;
+   height: 90vh;
+}
+
+.latex p {
+    margin-bottom: 2vh;
 }
 
 /* ----------------------------- */ 
