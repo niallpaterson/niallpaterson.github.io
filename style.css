@@ -97,7 +97,7 @@ table {
 /* TODO: Use google font, set system backup */
 
 body {
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-family: 'Rubik', sans-serif;
     /* Disables bounce on scroll */
     overflow: hidden; 
 }
@@ -110,14 +110,16 @@ header {
     color: rgb(255, 255, 255);
     /* Box */
     width: 35vw;
+    min-width: 300px;
+    max-width: 400px;
     height: 100vh;
     position: fixed;
 }
 
 .my-name {
     /* Text */ 
-    font-size: 8vh;
-    font-weight: 700;
+    font-size: 4em;
+    font-weight: 500;
     line-height: 1.1;
     letter-spacing: 2;
     /* Box */
@@ -132,8 +134,8 @@ header {
     /* Font */ 
     line-height: 1.25;
     letter-spacing: 1;
-    font-size: 3.25vh;
-    font-weight: 400;
+    font-size: 1.5em;
+    font-weight: 300;
     color: rgb(255, 204, 0);
 }
 
@@ -198,24 +200,18 @@ p {
     margin: 5vh 2vw 5vh 2vw;
 }
 
-    .nav-links li {
-        /* Box */
-        margin-top: 1.8vh;
-    }
+.nav-links li {
+    /* Box */
+    margin-top: 2.5vh;
+}
 
-        .nav-links li a {
-            /* Box */
-            background-color: rgb(31, 31, 31);
-            border: none;
-        }
-
-        .nav-links li a {
-            /* Text */
-            color: rgb(255, 255, 255);
-            font-size: 4vh;
-            letter-spacing: 2;
-            text-decoration: none;
-        }
+.nav-links li a {
+    /* Text */
+    color: rgb(255, 255, 255);
+    font-size: 1.5em;
+    letter-spacing: 2;
+    text-decoration: none;
+}
 
         .nav-links li a:hover {
             /* Text */
@@ -228,13 +224,13 @@ p {
 .social-media-links {
     /* Box */
     text-align: center;
-    margin-top: 6vh;
     width: 30vw;
+    max-width: 300px;
     margin: 0 auto;
     /* Icons */
     display: flex;
     flex-direction: row;
-    justify-content: space-around; 
+    justify-content: space-evenly; 
 }
 
 .social-media-links li {
@@ -249,7 +245,7 @@ p {
 .social-media-links a {
     /* Icons */
     line-height: 40px;
-    font-size: 3.5vh;
+    font-size: 1.25em;
     color: black;
 }
 
@@ -273,14 +269,12 @@ p {
 
 .footer {
     /* Box */
-    position: absolute;
-    bottom: 1vh;
-    left: 2vw;
-    right: 2vw;
-    height: 3vh;
-    width: 40vw;
+    position: fixed;
+    bottom: 0.1em;
+    left: 1em;
+    height: 2em;
     /* Text */
-    font-size: 2vh; 
+    font-size: 0.8em; 
     font-weight: 500;
 }
 
