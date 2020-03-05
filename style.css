@@ -1,5 +1,5 @@
 
-/* Work in progress placeholders
+/* Work in progress placeholder
 ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
 
 #in-progress-body {
@@ -40,9 +40,9 @@
 
 \*‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
 
-/* ==================== */ 
-/* = 0.0: Meyer Reset = */
-/* ==================== */ 
+/*======================  
+=== 0.0: Meyer Reset ===
+=======================*/ 
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -102,15 +102,16 @@ body {
     overflow: hidden; 
 }
 
-main {
-    /* Colors */
-    background-color:rgb(255, 255, 255);
-    color: rgb(31, 31, 31);
-}
+/* Header/Sidebar */
+
 header {
     /* Colors */
     background-color: rgb(31, 31, 31);
     color: rgb(255, 255, 255);
+    /* Box */
+    width: 35vw;
+    height: 100vh;
+    position: fixed;
 }
 
 .my-name {
@@ -119,43 +120,11 @@ header {
     font-weight: 700;
     line-height: 1.1;
     letter-spacing: 2;
-}
-
-/* ========================== */ 
-/* = 2.0: Responsive Styles = */
-/* ========================== */ 
-
-
-/* -------------------------- */ 
-/* ------ 2.0: Mobile ------- */
-/* -------------------------- */ 
-
-/* -------------------------- */ 
-/* ------ 2.1: Desktop ------ */
-/* -------------------------- */ 
-
-
-/*______________________________
-x.x HEADER
-‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
-
-
-/* Name & Description
-‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
-/* TODO: switch viewport font units on sidebar. Research em/rem units */ 
-
-header {
     /* Box */
-    width: 35vw;
-    height: 100vh;
-    position: fixed;
+    margin: 5vh 3vw;
+    position: relative;
 }
 
-.my-name {
-    /* Box */
-   margin: 5vh 3vw;
-   position: relative;
-}
 
 .my-description {
     /* Box */
@@ -167,6 +136,59 @@ header {
     font-weight: 400;
     color: rgb(255, 204, 0);
 }
+
+/* Main Content */
+
+main {
+    /* Box */
+    width: 65vw;
+    height: 90vw;
+    margin-top: 5vh;
+    overflow: auto;
+    float: right;
+}
+
+/* Center content */
+
+.main-title, p, h2, h3, h4 {
+    margin-right: 5vw;
+    margin-left: 5vw;
+}
+
+
+.main-title{
+    /* Text */
+    font-weight: 600;
+    font-size: 5vh;   
+    margin-bottom: 2vw;
+    color: rgb(31, 31, 31);
+}
+
+
+h3 {
+    /* Text */ 
+    font-weight: 600;
+    font-size: 3.5vh;   
+    margin-bottom: 2vw;
+    color: rgb(31, 31, 31);
+}
+
+h4 {
+    /* Text */ 
+    font-weight: 500;
+    font-size: 3vh;   
+    margin-bottom: 2vw;
+    color: rgb(31, 31, 31);
+}
+
+p {
+    /* Text */
+    font-size: 2.5vh;  
+    text-align: justify; 
+    line-height: 1.5;  
+    color: rgb(31, 31, 31);
+}
+
 
 
 /* Nav links
@@ -217,7 +239,7 @@ header {
 
 .social-media-links li {
     /* Sphere */
-    border: 1px solid rgb(31, 31, 31);
+    border: 2px solid rgb(31, 31, 31);
     background-color: white;
     width: 40px;
     height:40px;
@@ -244,6 +266,8 @@ header {
     color:white;
 }
 
+
+
 /* Copywrite Footer
 ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
 
@@ -265,67 +289,14 @@ header {
 x.x Main content boxes
 ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
 
-main {
-    /* Box */
-    width: 55vw;
-    height: 100vw;
-    float: right;
-}
-
-/* Main content h and p tags */ 
-
-h2 {
-    /* Text */
-    font-weight: 600;
-    font-size: 5vh;   
-    margin-bottom: 2vw;
-    color: rgb(31, 31, 31);
-    }
-
-h3 {
-    /* Text */ 
-    font-weight: 600;
-    font-size: 3.5vh;   
-    margin-bottom: 2vw;
-    color: rgb(31, 31, 31);
-}
-
-h4 {
-    /* Text */ 
-    font-weight: 500;
-    font-size: 3vh;   
-    margin-bottom: 2vw;
-    color: rgb(31, 31, 31);
-}
-
-p {
-    /* Text */
-    font-size: 2.5vh;  
-    text-align: justify; 
-    line-height: 1.5;  
-    color: rgb(31, 31, 31);
-    }
 
 /* About Me 
 ‾‾‾‾‾‾‾‾‾‾‾‾*/ 
 
 
-.about-me {
-    /* Box */
-    margin: 5vh 5vw;
-}
-
 
 /* Philosophy
 ‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/ 
-
-
-.philosophy {
-    /* Box */
-    margin: 5vh 5vw;
-    overflow: auto;
-    height: 90vh;
-}
 
 .academic-articles {
     /* Box */
@@ -348,13 +319,6 @@ p {
 
 /* LaTeX
 ‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/ 
-
-.latex {
-   /* Box */
-   margin: 5vh 5vw;
-   overflow: auto;
-   height: 90vh;
-}
 
 .latex p {
     margin-bottom: 2vh;
@@ -392,13 +356,6 @@ p {
     }
 /* Credits
 ‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/ 
-
-.credits {
-    /* Box */
-    margin: 5vh 5vw;
-    overflow: auto;
-    height: 90vh;
- }
 
  .credits p {
     margin-bottom: 2vh;
