@@ -121,12 +121,6 @@ header {
     letter-spacing: 2;
 }
 
-a {
-    color: rgb(245, 60, 152);
-    text-decoration: none;
-}
-
-
 /* ========================== */ 
 /* = 2.0: Responsive Styles = */
 /* ========================== */ 
@@ -175,12 +169,11 @@ header {
 }
 
 
-/* Nav and Social Media Buttons
-‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
+/* Nav links
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
 .nav-links {
     /* Box */
     margin: 5vh 2vw 5vh 2vw;
-
 }
 
     .nav-links li {
@@ -188,13 +181,13 @@ header {
         margin-top: 1.8vh;
     }
 
-        .nav-links li button {
+        .nav-links li a {
             /* Box */
             background-color: rgb(31, 31, 31);
             border: none;
         }
 
-        .nav-links li button a {
+        .nav-links li a {
             /* Text */
             color: rgb(255, 255, 255);
             font-size: 4vh;
@@ -202,46 +195,54 @@ header {
             text-decoration: none;
         }
 
-        .nav-links li button a:hover {
+        .nav-links li a:hover {
             /* Text */
             color: rgb(255, 204, 0);
         }
 
+/* Social Media links
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
+
 .social-media-links {
     /* Box */
-    color: green;
     text-align: center;
     margin-top: 6vh;
+    width: 30vw;
+    margin: 0 auto;
     /* Icons */
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly; 
+    justify-content: space-around; 
 }
 
-/* TODO: set maximum distance for space-evenly */
+.social-media-links li {
+    /* Sphere */
+    border: 1px solid rgb(31, 31, 31);
+    background-color: white;
+    width: 40px;
+    height:40px;
+    border-radius: 50%;
+}
 
+.social-media-links a {
+    /* Icons */
+    line-height: 40px;
+    font-size: 3.5vh;
+    color: black;
+}
 
-    .social-media-links li button {
-       /* Sphere */
-       border: 2px solid white;
-       border-radius: 50%;
-       width: 7vh;
-       height: 7vh;
-       border-color: rgb(31, 31, 31);
-       /* Centre Icons */
-       line-height: 6vh;
-       /* Icons */
-       font-size: 3vh;
-       text-align: center;
-    }
+/* User hovers on link => link reverses color */ 
 
-        .social-media-links button:hover {
-            /* Box */
-            background-color :rgb(31, 31, 31);
-            border-color: white;
-            /* Icons */
-            color:white;
-        }
+.social-media-links li:hover {
+    /* Box */
+    background-color :rgb(31, 31, 31);
+    border-color: white;
+}
+
+.social-media-links li:hover a{
+    /* Icons */
+    color:white;
+}
 
 /* Copywrite Footer
 ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
@@ -371,7 +372,7 @@ p {
     } 
 
 
-    .latex-download-links li button {
+    .latex-download-links li a {
         /* Box */
         border: 2px solid white;
         border-radius: 50%;
@@ -385,7 +386,7 @@ p {
         font-size: 3vh;
     }
 
-    .latex-download-links li button:hover {
+    .latex-download-links li a:hover {
     color: rgb(245, 60, 152);
     background-color: rgb(31, 31, 31);
     }
