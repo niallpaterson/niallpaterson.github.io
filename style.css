@@ -110,9 +110,10 @@ header {
     color: rgb(255, 255, 255);
     /* Box */
     width: 35vw;
-    min-width: 300px;
+    min-width: 325px;
     max-width: 400px;
     height: 100vh;
+    min-height: 550px;
     position: fixed;
 }
 
@@ -123,14 +124,14 @@ header {
     line-height: 1.1;
     letter-spacing: 2;
     /* Box */
-    margin: 5vh 3vw;
+    margin: 0.5em auto 0 30px;
     position: relative;
 }
 
 
 .my-description {
     /* Box */
-    margin: 4vh 3vw 5vh 3vw;
+    margin: 1em auto 0 30px;
     /* Font */ 
     line-height: 1.25;
     letter-spacing: 1;
@@ -138,6 +139,99 @@ header {
     font-weight: 300;
     color: rgb(255, 204, 0);
 }
+
+
+
+/* Nav links
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
+.nav-links {
+    /* Box */
+    margin: 2.25em auto 0 30px;
+}
+
+.nav-links li {
+    /* Box */
+    margin-top: 1.25em;
+}
+
+.nav-links li a {
+    /* Text */
+    color: rgb(255, 255, 255);
+    font-size: 1.5em;
+    letter-spacing: 2;
+    text-decoration: none;
+}
+
+        .nav-links li a:hover {
+            /* Text */
+            color: rgb(255, 204, 0);
+        }
+
+/* Social Media links
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
+
+.social-media-links {
+    /* Box */
+    text-align: center;
+    width: 20em;
+    margin: 3em auto;
+    /* Icons */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; 
+}
+
+.social-media-links li {
+    /* Sphere */
+    border: 2px solid rgb(31, 31, 31);
+    background-color: white;
+    width: 40px;
+    height:40px;
+    border-radius: 50%;
+}
+
+.social-media-links a {
+    /* Icons */
+    line-height: 40px;
+    font-size: 1.25em;
+    color: black;
+}
+
+/* User hovers on link => link reverses color */ 
+
+.social-media-links li:hover {
+    /* Box */
+    background-color :rgb(31, 31, 31);
+    border-color: white;
+}
+
+.social-media-links li:hover a{
+    /* Icons */
+    color:white;
+}
+
+
+
+/* Copywrite Footer
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
+
+.footer {
+    /* Box */
+    position: relative;
+    padding-top: 4em;
+    bottom: 0.3em;
+    margin-left: 15px;
+    /* Text */
+    font-size: 0.8em; 
+    font-weight: 500;
+}
+
+
+/*______________________________
+x.x Main content boxes
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
+
+
 
 /* Main Content */
 
@@ -190,98 +284,6 @@ p {
     line-height: 1.5;  
     color: rgb(31, 31, 31);
 }
-
-
-
-/* Nav links
-‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
-.nav-links {
-    /* Box */
-    margin: 5vh 2vw 5vh 2vw;
-}
-
-.nav-links li {
-    /* Box */
-    margin-top: 2.5vh;
-}
-
-.nav-links li a {
-    /* Text */
-    color: rgb(255, 255, 255);
-    font-size: 1.5em;
-    letter-spacing: 2;
-    text-decoration: none;
-}
-
-        .nav-links li a:hover {
-            /* Text */
-            color: rgb(255, 204, 0);
-        }
-
-/* Social Media links
-‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
-
-.social-media-links {
-    /* Box */
-    text-align: center;
-    width: 30vw;
-    max-width: 300px;
-    margin: 0 auto;
-    /* Icons */
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly; 
-}
-
-.social-media-links li {
-    /* Sphere */
-    border: 2px solid rgb(31, 31, 31);
-    background-color: white;
-    width: 40px;
-    height:40px;
-    border-radius: 50%;
-}
-
-.social-media-links a {
-    /* Icons */
-    line-height: 40px;
-    font-size: 1.25em;
-    color: black;
-}
-
-/* User hovers on link => link reverses color */ 
-
-.social-media-links li:hover {
-    /* Box */
-    background-color :rgb(31, 31, 31);
-    border-color: white;
-}
-
-.social-media-links li:hover a{
-    /* Icons */
-    color:white;
-}
-
-
-
-/* Copywrite Footer
-‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
-
-.footer {
-    /* Box */
-    position: fixed;
-    bottom: 0.1em;
-    left: 1em;
-    height: 2em;
-    /* Text */
-    font-size: 0.8em; 
-    font-weight: 500;
-}
-
-
-/*______________________________
-x.x Main content boxes
-‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
 
 
 /* About Me 
