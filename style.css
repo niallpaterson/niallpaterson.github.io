@@ -103,11 +103,10 @@ body {
 .wrapper {
     width: 100vw;
     height: 100vh;
-    min-width: 925px;
+    min-width: 700px;
     display: flex;
     justify-content: flex-start;
     overflow: hidden;
-
 }
 
 /* Header/Sidebar */
@@ -117,14 +116,13 @@ header {
     background-color: rgb(31, 31, 31);
     color: rgb(255, 255, 255);
     /* Box */
-    width: 35%;
-    min-width: 325px;
-    max-width: 350px;
     height: 100%;
     min-height: 550px;
-    /* Allows fixed left & float */
-    position: sticky;
-    top: 0;
+    padding-right: 1vw;
+    /* Positioning Footer */
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
 
 .my-name {
@@ -185,6 +183,7 @@ header {
     text-align: center;
     width: 20rem;
     margin: 3rem auto;
+
     /* Icons */
     display: flex;
     flex-direction: row;
@@ -228,12 +227,16 @@ header {
 .footer {
     /* Box */
     position: relative;
-    padding-top: 4rem;
-    bottom: 1rem;
     margin-left: 15px;
-    /* Text */
-    font-size: 0.8rem; 
-    font-weight: 500;
+    flex-grow: 1;
+}
+
+.footer-content {
+/* Text */
+position: absolute;
+bottom: 0.75rem;
+font-size: 0.8rem; 
+font-weight: 500;
 }
 
 
@@ -242,7 +245,7 @@ header {
 main {
     /* Box */
     height: 100%;
-    width: auto;
+    flex-grow: 1;
     min-width: 250px;
     overflow: scroll;
     float: right;
@@ -355,6 +358,7 @@ p {
     color: rgb(245, 60, 152);
     background-color: rgb(31, 31, 31);
     }
+
 /* Credits
 ‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/ 
 
