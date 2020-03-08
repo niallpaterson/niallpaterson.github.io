@@ -1,4 +1,6 @@
 
+/* TODO: Run through CSS LINT */
+
 /* Work in progress placeholder
 ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
 
@@ -26,23 +28,18 @@
     font-size: 6vw;
 }
 
-/*_________TABLE OF CONTENTS________\*
+/*_________TABLE OF CONTENTS_________
+    0. Meyer Reset
+    1. Global Style
+    2. Header/Sidebar
+    3. Main Content
+    4. Individual Page Styling
+    5. Media Query
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
 
-   0.0 - Meyer Reset
-   1.0 - Global Style
-   2.0 - Responsive Styles
-        2.0 - Mobile
-            2.0.0 - 
-        2.1 - Desktop
-            2.1.0 - 
-        2.2 - Widescreen
-            2.2.0 -
-
-\*‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
-
-/*======================  
-=== 0.0: Meyer Reset ===
-=======================*/ 
+/*=================  
+ 0. Meyer Reset     
+==================*/ 
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -89,12 +86,10 @@ table {
     border-spacing: 0;
 }
 
-/* ========================== */ 
-/* =   1.0: Global Style    = */
-/* ========================== */ 
 
+/* 1. Global Style
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
 
-/* TODO: Use google font, set system backup */
 
 body {
     font-family: 'Rubik', sans-serif;
@@ -103,26 +98,32 @@ body {
 .wrapper {
     width: 100vw;
     height: 100vh;
-    min-width: 700px;
     display: flex;
-    justify-content: flex-start;
-    overflow: hidden;
+    flex-direction: column;
+    overflow: scroll;
 }
 
-/* Header/Sidebar */
+/* 2. Header/Sidebar
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
 
 header {
     /* Colors */
     background-color: rgb(31, 31, 31);
     color: rgb(255, 255, 255);
     /* Box */
-    height: 100%;
-    min-height: 550px;
-    padding-right: 1vw;
-    /* Positioning Footer */
+    flex-grow: 1;
+    flex-basis: 0;
+    min-height: 96vh;
+    /* Position Children*/
     display: flex;
     flex-direction: column;
-    position: relative;
+    justify-content: space-around;
+}
+
+/* child margins */
+
+.my-name, .my-description, .nav-links {
+    margin-left: 15px;
 }
 
 .my-name {
@@ -131,41 +132,35 @@ header {
     font-weight: 500;
     line-height: 1.1;
     letter-spacing: 2;
-    /* Box */
-    margin: 1.75rem auto 0 30px;
-    position: relative;
 }
-
 
 .my-description {
     /* Box */
-    margin: 1.75rem auto 0 30px;
+    margin-right: auto;
     /* Font */ 
     line-height: 1.25;
     letter-spacing: 1;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 300;
     color: rgb(255, 204, 0);
 }
 
-
-
-/* Nav links
-‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
-.nav-links {
-    /* Box */
-    margin: 2.25rem auto 0 30px;
-}
+/* Navigation */
 
 .nav-links li {
     /* Box */
     margin-top: 1.25rem;
 }
 
+.nav-links li:first-child {
+    /* Box */
+    margin-top: 0;
+}
+
 .nav-links li a {
     /* Text */
     color: rgb(255, 255, 255);
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     letter-spacing: 2;
     text-decoration: none;
 }
@@ -175,15 +170,11 @@ header {
             color: rgb(255, 204, 0);
         }
 
-/* Social Media links
-‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
+/* Social Media */
 
 .social-media-links {
     /* Box */
     text-align: center;
-    width: 20rem;
-    margin: 3rem auto;
-
     /* Icons */
     display: flex;
     flex-direction: row;
@@ -220,44 +211,32 @@ header {
 }
 
 
-
-/* Copywrite Footer
-‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
+/* Copywrite Footer */
 
 .footer {
-    /* Box */
-    position: relative;
-    margin-left: 15px;
-    flex-grow: 1;
-}
-
-.footer-content {
+/* Box */
+margin-left: 15px;
 /* Text */
-position: absolute;
-bottom: 0.75rem;
 font-size: 0.8rem; 
 font-weight: 500;
 }
 
-
-/* Main Content */
-
+/* 3. Main Content
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
 main {
     /* Box */
-    height: 100%;
-    flex-grow: 1;
-    min-width: 250px;
+    flex-grow: 2.5;
+    flex-basis: 0;
     overflow: scroll;
-    float: right;
+    min-height: 100vh;
 }
 
 /* Center content */
 
 .main-title, p, h2, h3, h4 {
-    margin-right: 7.5vw;
-    margin-left: 3rem;
+    margin-right: 5vw;
+    margin-left: 5vw;
 }
-
 
 .main-title{
     /* Text */
@@ -267,7 +246,6 @@ main {
     margin-bottom: 1.75rem;
     color: rgb(31, 31, 31);
 }
-
 
 h3 {
     /* Text */ 
@@ -294,13 +272,10 @@ p {
 }
 
 
-/* About Me 
-‾‾‾‾‾‾‾‾‾‾‾‾*/ 
+/* 4. Individual Page Styling
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
 
-
-
-/* Philosophy
-‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/ 
+/* Philosophy */
 
 .academic-articles {
     /* Box */
@@ -321,8 +296,7 @@ p {
 }
 
 
-/* LaTeX
-‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/ 
+/* LaTex */
 
 .latex p {
     margin-bottom: 2vh;
@@ -359,15 +333,32 @@ p {
     background-color: rgb(31, 31, 31);
     }
 
-/* Credits
-‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/ 
+/* Credits */
 
  .credits p {
     margin-bottom: 2vh;
 }
 
-/* ----------------------------- */ 
-/* ------ 2.4: WideScreen ------ */
-/* ----------------------------- */ 
 
+/* 4. Media Query
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
 
+@media only screen and (min-width: 600px) {
+    .wrapper {
+        flex-direction: row;
+        overflow: none;
+    }
+
+    header {
+        min-height: 600px;
+        min-width: 325px;
+    }
+
+    main {
+        min-height: 0;
+    }
+
+    .my-name, .my-description, .nav-links {
+        margin-left: 30px;
+    }
+  }
