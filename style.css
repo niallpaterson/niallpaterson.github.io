@@ -1,6 +1,15 @@
 /* BEGIN: WIP placeholder
 ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
 
+rgb(255, 204, 0)
+rgb(245, 60, 152)
+
+rgb(245, 60, 60)
+rgb(63, 60, 245)
+
+#131418
+#C12898
+
 #in-progress-body {
     background-color: black;
 }
@@ -35,6 +44,7 @@
     3. Main Content
     4. Individual Page Styling
     5. Media Query
+    6. Color Classes
 ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
 
 /* 1. Meyer Reset
@@ -98,6 +108,8 @@ body {
     display: flex;
     flex-direction: column;
     overflow: scroll;
+    /* fills beneath header */
+    background-color: rgb(31, 31, 31);
 }
 
 /* 2. Header/Sidebar
@@ -110,11 +122,12 @@ header {
     /* box */
     flex-grow: 1;
     flex-basis: 0;
-    min-height: 96vh;
+    min-height: 96vh;    
     /* position children*/
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
+    
 }
 
 /* child margins */
@@ -181,7 +194,7 @@ header {
 
 .social-media-links li {
     /* sphere */
-    border: 2px solid rgb(31, 31, 31);
+    border: 2px solid black;
     background-color: white;
     width: 40px;
     height:40px;
@@ -192,7 +205,7 @@ header {
     /* icons */
     line-height: 40px;
     font-size: 1.25rem;
-    color: black;
+    color: rgb(31, 31, 31);
 }
 
 /* User hovers on link => link reverses color */ 
@@ -200,11 +213,16 @@ header {
     /* box */
     background-color :rgb(31, 31, 31);
     border-color: white;
+    /* cursor */
+    cursor: pointer;
 }
 .social-media-links li:hover a{
     /* icons */
     color:white;
 }
+
+
+
 
 
 /* Copywrite Footer */
@@ -225,6 +243,7 @@ main {
     flex-basis: 0;
     overflow: scroll;
     min-height: 100vh;
+    background-color: white;
 }
 
 .main-title, p, h2, h3, h4 {
@@ -343,6 +362,19 @@ background-color: rgb(31, 31, 31);
 
 /* 4. Media Query
 ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
+
+/* Tablet Vertical */
+
+  /* TODO: Add media query for tablet vertical */
+
+  /* TODO: Add media query for bigger screen sizes (increase root font size) */
+
+
+  /* Basically: need to make the margin min-height responsive to SCREEN HEIGHT, 
+  and the width responsive to SCREEN WIDTH */
+
+
+
 /* Desktop */
 @media only screen and (min-width: 600px) {
     .wrapper {
@@ -352,7 +384,8 @@ background-color: rgb(31, 31, 31);
 
     header {
         min-height: 600px;
-        min-width: 325px;
+        min-width: 350px;
+        margin-top: 2rem;
     }
 
     main {
@@ -364,14 +397,26 @@ background-color: rgb(31, 31, 31);
     }
   }
 
-  @media only screen and (min-width: 1600px) {
+  /* FIXME: this is what you want, but be careful of other parameters now */
+
+  @media only screen and (min-width: 1250px)  {
       html {
-          font: 16pt;
+          font-size: 16px;
       }
   }
 
-/* Tablet Vertical */
 
-  /* TODO: Add media query for tablet vertical */
 
-  /* TODO: Add media query for bigger screen sizes (increase root font size) */
+/* 6. Color Classes
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
+
+
+
+
+.my-description, .nav-links li a:hover {
+    color: rgb(255, 204, 0);
+}
+
+.latex-download-links li a:hover {
+    color: rgb(245, 60, 152);
+}
