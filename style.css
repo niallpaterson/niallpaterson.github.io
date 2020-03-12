@@ -1,15 +1,6 @@
 /* BEGIN: WIP placeholder
 ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
 
-rgb(255, 204, 0)
-rgb(245, 60, 152)
-
-rgb(245, 60, 60)
-rgb(63, 60, 245)
-
-#131418
-#C12898
-
 #in-progress-body {
     background-color: black;
 }
@@ -112,6 +103,7 @@ body {
     background-color: rgb(31, 31, 31);
 }
 
+
 /* 2. Header/Sidebar
 ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
 
@@ -127,7 +119,6 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
 }
 
 /* child margins */
@@ -139,8 +130,6 @@ header {
     /* text */ 
     font-size: 4rem;
     font-weight: 500;
-    line-height: 1.1;
-    letter-spacing: 2;
 }
 
 .my-description {
@@ -221,15 +210,12 @@ header {
     color:white;
 }
 
-
-
-
-
 /* Copywrite Footer */
 
 .footer {
     /* box */
     margin-left: 15px;
+    margin-bottom: 0.75rem;
     /* text */
     font-size: 0.8rem; 
     font-weight: 500;
@@ -259,7 +245,7 @@ main {
     font-weight: 600;
     font-size: 2.25rem;
     /* box */
-    margin-top: 2rem;  
+    margin-top: 3rem;  
     margin-bottom: 1.75rem;
 }
 
@@ -285,6 +271,48 @@ h4 {
     /* box */  
     margin-bottom: 1.5rem;
 }
+
+
+/* download buttons */
+
+.link-list, .paper-download-links {
+    margin-left: 5vw;
+}
+
+/* center link descriptions */
+.link-list {
+    line-height: 1.75rem;
+    margin-top: 1rem;
+}
+
+.link-list li {
+    /* sphere */
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 1.75rem;
+    height: 1.75rem;
+    border-color: rgb(31, 31, 31); 
+    /* center icons */
+    text-align: center;
+    line-height:1.75rem;
+}
+
+.right-latex-link  {
+margin-left: 0.5rem;
+} 
+
+.right-latex-link, .left-latex-link, .paper-link {
+    margin-right: 0.25rem;
+    } 
+
+/* .paper-download-links */
+
+.link-list a, .paper-download-links a {
+/* icons */
+color: rgb(31, 31, 31);
+font-size: 1.25rem;
+}
+
 
 /* 4. Individual Page Styling
 ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
@@ -313,6 +341,16 @@ h4 {
     margin-bottom: 1vh;
 }
 
+/* talks */
+
+.talks-list {
+    margin-left: 5vw;
+}
+
+.talk {
+    margin-top: 0.5rem;
+}
+
 
 /* LaTex */
 
@@ -326,32 +364,13 @@ h4 {
     margin-top: 3vh;
 }
 
-.latex-download-links {
+.link-list {
     /* icons */
     display: flex;
     flex-direction: row;
     justify-content: left;
     } 
 
-
-.latex-download-links li a {
-    /* box */
-    border: 2px solid white;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    border-color: rgb(31, 31, 31); 
-    margin-right: 1vh;
-    margin-left: 1vh;
-    /* icons */
-    color: rgb(0, 0, 0);
-    font-size: 3vh;
-}
-
-.latex-download-links li a:hover {
-color: rgb(245, 60, 152);
-background-color: rgb(31, 31, 31);
-}
 
 /* Credits */
 
@@ -372,8 +391,6 @@ background-color: rgb(31, 31, 31);
 
   /* Basically: need to make the margin min-height responsive to SCREEN HEIGHT, 
   and the width responsive to SCREEN WIDTH */
-
-
 
 /* Desktop */
 @media only screen and (min-width: 600px) {
@@ -406,17 +423,17 @@ background-color: rgb(31, 31, 31);
   }
 
 
-
 /* 6. Color Classes
 ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
-
-
-
 
 .my-description, .nav-links li a:hover {
     color: rgb(255, 204, 0);
 }
 
-.latex-download-links li a:hover {
+.link-list li:hover, .paper-download-links:hover {
+    background-color: rgb(31, 31, 31);
+}
+
+.link-list li:hover a, .paper-download-links:hover a {
     color: rgb(245, 60, 152);
 }
