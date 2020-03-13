@@ -121,7 +121,8 @@ header {
     /* box */
     flex-grow: 1;
     flex-basis: 0;
-    min-height: 96vh;    
+    min-height: 96vh;   
+    margin-top: 1rem;
     /* position children*/
     display: flex;
     flex-direction: column;
@@ -130,7 +131,7 @@ header {
 
 /* child margins */
 .my-name, .my-description, .nav-links {
-    margin-left: 15px;
+    margin-left: 15px
 }
 
 .my-name {
@@ -191,18 +192,18 @@ header {
     /* sphere */
     border: 2px solid rgb(31, 31, 31);
     background-color: white;
-    width: 40px;
-    height:40px;
+    width: 2.5rem;
+    height: 2.5rem;
     border-radius: 50%;
 }
 
 .social-media-links a {
     /* box */
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
     border-radius: 50%;
     /* icons */
-    line-height: 40px;
+    line-height: 2.5rem;
     font-size: 1.25rem;
     color: rgb(31, 31, 31);
 }
@@ -239,6 +240,7 @@ main {
     overflow: scroll;
     min-height: 100vh;
     background-color: white;
+    padding-bottom: 20px;
 }
 
 .main-title, p, h2, h3, h4 {
@@ -457,21 +459,11 @@ font-size: 1.25rem;
 }
 
 
-/* 4. Media Query
+/* 4. Media Queries
 ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
 
-/* Tablet Vertical */
-
-  /* TODO: Add media query for tablet vertical */
-
-  /* TODO: Add media query for bigger screen sizes (increase root font size) */
-
-
-  /* Basically: need to make the margin min-height responsive to SCREEN HEIGHT, 
-  and the width responsive to SCREEN WIDTH */
-
 /* Desktop */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 650px) {
     .wrapper {
         flex-direction: row;
         overflow: none;
@@ -480,11 +472,12 @@ font-size: 1.25rem;
     header {
         min-height: 600px;
         min-width: 350px;
-        margin-top: 2rem;
+        margin-top: 3rem;
     }
 
     main {
         min-height: 0;
+        
     }
 
     .my-name, .my-description, .nav-links {
@@ -492,11 +485,35 @@ font-size: 1.25rem;
     }
   }
 
-  /* FIXME: this is what you want, but be careful of other parameters now */
+/* Tablet Vertical */
+  @media only screen and (max-aspect-ratio: 5/4), (min-height: 900px) 
+  {
+      header {
+        height: 45rem;
+      }
+  }
 
-  @media only screen and (min-width: 1250px)  {
+/* Wider Screens */
+
+  @media only screen and (min-width: 1350px) 
+  {
       html {
-          font-size: 16px;
+        font-size: 19px;
+      }
+  }
+
+  @media only screen and (min-width: 1600px) 
+  {
+      html {
+        font-size: 21px;
+      }
+  }
+  
+  /* Small Mobiles (Iphone 5) */
+  @media only screen and (max-height: 600px) 
+  {
+      html {
+        font-size: 14px;
       }
   }
 

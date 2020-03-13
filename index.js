@@ -58,14 +58,17 @@ colorChangeButton.addEventListener("click", function() {
 // change color style of css classes
 function modifyStyle() {
     // change CSS colors
-    let elements1 = document.querySelectorAll(".my-description", ".nav-links li a:hover");
-    let elements2 = document.querySelectorAll(".latex-download-links li a:hover"); 
-
+    let elements1 = document.querySelectorAll(".my-description");
+    let elements2 = document.querySelectorAll(".link-list li:hover a");
+    console.log(elements1); 
+    console.log(elements2);
     for (let i = 0; i < elements1.length; i++) {
+    
     elements1[i].style.color = settings.color1[settings.colorSetting];
     }
 
     for (let j = 0; j < elements2.length; j++) {
+        console.log("rage!") ;
         elements2[j].style.color = settings.color2[settings.colorSetting];
-        }
+    }
 }
