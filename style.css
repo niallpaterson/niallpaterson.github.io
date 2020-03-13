@@ -463,7 +463,7 @@ font-size: 1.25rem;
 ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
 
 /* Desktop */
-@media only screen and (min-width: 650px) {
+@media only screen and (min-width: 650px) and (min-height: 425px) {
     .wrapper {
         flex-direction: row;
         overflow: none;
@@ -509,11 +509,38 @@ font-size: 1.25rem;
       }
   }
   
-  /* Small Mobiles (Iphone 5) */
+  /* Small Mobiles (Iphone 5 etc.) */
+
+/* Horizonal */
   @media only screen and (max-height: 600px) 
   {
       html {
-        font-size: 14px;
+        font-size: 13px;
+      }
+
+      .social-media-links {
+        justify-content: center; 
+      }
+
+      .social-media-links a {
+        margin-left: 10px; 
+        margin-right: 10px;
+      }
+  }
+/* Vertical */ 
+  @media only screen and (max-height: 370px) 
+  {
+      html {
+        font-size: 10px;
+      }
+      
+      .social-media-links {
+        justify-content: center; 
+      }
+
+      .social-media-links a {
+        margin-left: 10px; 
+        margin-right: 10px;
       }
   }
 
