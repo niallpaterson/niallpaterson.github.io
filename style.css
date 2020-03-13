@@ -512,6 +512,6 @@ font-size: 1.25rem;
     background-color: rgb(31, 31, 31);
 }
 
-.link-list li:hover a, .paper-download-links:hover a {
+.link-list li:hover a, .paper-download-links:hover a, a {
     color: rgb(245, 60, 152);
 }
