@@ -102,7 +102,6 @@ body {
 
 .wrapper {
     width: 100vw;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     overflow: scroll;
@@ -119,10 +118,10 @@ header {
     background-color: rgb(31, 31, 31);
     color: rgb(255, 255, 255);
     /* box */
+    margin-top: 1rem;
     flex-grow: 1;
     flex-basis: 0;
     min-height: 96vh;   
-    margin-top: 1rem;
     /* position children*/
     display: flex;
     flex-direction: column;
@@ -237,8 +236,6 @@ main {
     /* box */
     flex-grow: 2.5;
     flex-basis: 0;
-    overflow: scroll;
-    min-height: 100vh;
     background-color: white;
     padding-bottom: 20px;
 }
@@ -326,9 +323,11 @@ font-size: 1.25rem;
 
 
 /* 4. Individual Page Styling
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
 ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
 
-/* Philosophy */
+/* 4.0 Philosophy
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
 
 /* Articles */
 
@@ -373,8 +372,8 @@ font-size: 1.25rem;
     margin-right: 5vw;
 }
 
-
-/* LaTex */
+/* 4.1 Latex
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
 
 .latex p {
     /* box */
@@ -394,8 +393,8 @@ font-size: 1.25rem;
     } 
 
 
-/* Projects */ 
-
+/* 4.3 Projects
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
 
 /* Flip Cards */
 
@@ -452,14 +451,15 @@ font-size: 1.25rem;
     transform: rotateY(180deg);
 }
 
-/* Credits */
+/* 4.4 Credits
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
 
  .credits p {
     margin-bottom: 2vh;
 }
 
 
-/* 4. Media Queries
+/* 5. Media Queries
 ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
 
 /* Desktop */
@@ -467,17 +467,21 @@ font-size: 1.25rem;
     .wrapper {
         flex-direction: row;
         overflow: none;
+        height: 100vh;
     }
 
     header {
         min-height: 600px;
         min-width: 350px;
-        margin-top: 3rem;
+        margin-top: 2rem;
     }
 
     main {
-        min-height: 0;
-        
+        overflow: scroll;
+    }
+
+    .main-title { 
+        margin-top: 2rem;
     }
 
     .my-name, .my-description, .nav-links {
@@ -498,18 +502,18 @@ font-size: 1.25rem;
   @media only screen and (min-width: 1350px) 
   {
       html {
-        font-size: 19px;
+        font-size: 17px;
       }
   }
 
   @media only screen and (min-width: 1600px) 
   {
       html {
-        font-size: 21px;
+        font-size: 20px;
       }
   }
   
-  /* Small Mobiles (Iphone 5 etc.) */
+/* Small Mobiles (Iphone 5 etc.) */
 
 /* Horizonal */
   @media only screen and (max-height: 600px) 
@@ -533,7 +537,7 @@ font-size: 1.25rem;
       html {
         font-size: 10px;
       }
-      
+
       .social-media-links {
         justify-content: center; 
       }
