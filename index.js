@@ -3,18 +3,6 @@
 
 var settings = {
     colorSetting: 0,
-    color1: [
-        "rgb(255, 204, 0)", // yellow
-        "rgb(235, 31, 31)", // red
-        "rgb(14, 156, 186)", // azure
-        "rgb(101, 153, 19)" // green
-        ],
-    color2: [
-        "rgb(245, 60, 152)", // pink
-        "rgb(32, 28, 240)", // blue
-        "rgb(128, 28, 88)", // purple
-        "rgb(109, 57, 21)" // brown
-    ]
 };
 
 // user opens page => search local storage for setting
@@ -44,7 +32,7 @@ var colorChangeButton = document.getElementById("colorChanger");
 // User clicks button
 colorChangeButton.addEventListener("click", function() {
     // 1. If colorSetting is less than max, increment. Else, reset to 0.
-    if (settings.colorSetting < settings.color1.length - 1) {
+    if (settings.colorSetting < 2) {
     settings.colorSetting += 1;
     } else {
     settings.colorSetting = 0; 
@@ -57,18 +45,24 @@ colorChangeButton.addEventListener("click", function() {
 
 // change color style of css classes
 function modifyStyle() {
+    // set variables
+    let colorSettingString = settings.colorSetting.toString();
+    console.log(colorSettingString);
     // change CSS colors
-    let elements1 = document.querySelectorAll(".my-description");
-    let elements2 = document.querySelectorAll(".link-list li:hover a");
-    console.log(elements1); 
-    console.log(elements2);
-    for (let i = 0; i < elements1.length; i++) {
+
+    // color 1 //
+    document.getElementById("my-description").className = "my-description color-class-" + colorSettingString + "-0";
+    document.getElementById("nav-links").className = "nav-links color-class-" + colorSettingString + "-0";
+    // color 2 //
     
-    elements1[i].style.color = settings.color1[settings.colorSetting];
+    let linkLists = document.getElementsByClassName("link-list");
+    for (i = 0; i < linkLists.length; i++) {
+    linkLists[i].className = "link-list color-class-" + colorSettingString + "-1";
     }
 
-    for (let j = 0; j < elements2.length; j++) {
-        console.log("rage!") ;
-        elements2[j].style.color = settings.color2[settings.colorSetting];
-    }
+    let hyperLinks = document.getElementsByClassName("hyperlink");
+    for (i = 0; i < hyperLinks.length; i++) {
+    hyperLinks[i].className = "hyperlink color-class-" + colorSettingString + "-1";
+
+}
 }

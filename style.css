@@ -170,11 +170,6 @@ header {
     text-decoration: none;
 }
 
-.nav-links li a:hover {
-    /* text */
-    color: rgb(255, 204, 0);
-}
-
 /* Social Media */
 
 
@@ -551,15 +546,43 @@ font-size: 1.25rem;
 
 /* 6. Color Classes
 ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
-
-.my-description, .nav-links li a:hover {
-    color: rgb(255, 204, 0);
-}
+/* Invert B&W on hover */
 
 .link-list li:hover, .paper-download-links:hover {
     background-color: rgb(31, 31, 31);
 }
 
-.link-list li:hover a, .paper-download-links:hover a, a {
+/* User Color Settings */
+
+
+/* Pair 1 */
+
+.color-class-0-0, .color-class-0-0 li a:hover {
+    color: rgb(255, 204, 0);
+}
+
+.color-class-0-1 li:hover a, .color-class-0-1.hyperlink {
     color: rgb(245, 60, 152);
 }
+
+
+/* Pair 2 */
+
+.color-class-1-0, .color-class-1-0 li a:hover  {
+    color: rgb(31, 226, 233);
+}
+
+.color-class-1-1 li:hover a, .color-class-1-1.hyperlink {
+    color: rgb(253,95,0);
+}
+
+/* Pair 3 */
+
+.color-class-2-0, .color-class-2-0 li a:hover {
+    color: rgb(0, 255, 115);
+}
+
+.color-class-2-1 li:hover a, .color-class-2-1.hyperlink {
+    color: rgb(169, 21, 255);
+}
+
