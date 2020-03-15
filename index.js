@@ -63,6 +63,10 @@ function modifyStyle() {
     let hyperLinks = document.getElementsByClassName("hyperlink");
     for (i = 0; i < hyperLinks.length; i++) {
     hyperLinks[i].className = "hyperlink color-class-" + colorSettingString + "-1";
+    }
 
-}
+    let handouts = document.getElementsByClassName("handout");
+    for (i = 0; i < handouts.length; i++) {
+        handouts[i].className = "handout color-class-" + colorSettingString + "-1";
+        }
 }

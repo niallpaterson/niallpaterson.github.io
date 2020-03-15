@@ -371,6 +371,10 @@ font-size: 1.25rem;
     margin-right: 5vw;
 }
 
+.handout {
+    color: rgb(31, 31, 31);
+}
+
 /* 4.1 Latex
 ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
 
@@ -565,7 +569,7 @@ font-size: 1.25rem;
     color: rgb(255, 204, 0);
 }
 
-.color-class-0-1 li:hover a, .color-class-0-1.hyperlink {
+.color-class-0-1 li:hover a, .color-class-0-1.hyperlink, .color-class-0-1.handout:hover {
     color: rgb(245, 60, 152);
 }
 
@@ -575,7 +579,7 @@ font-size: 1.25rem;
     color: rgb(31, 226, 233);
 }
 
-.color-class-1-1 li:hover a, .color-class-1-1.hyperlink {
+.color-class-1-1 li:hover a, .color-class-1-1.hyperlink, .color-class-1-1.handout:hover {
     color: rgb(253,95,0);
 }
 
@@ -585,7 +589,7 @@ font-size: 1.25rem;
     color: rgb(0, 255, 115);
 }
 
-.color-class-2-1 li:hover a, .color-class-2-1.hyperlink {
+.color-class-2-1 li:hover a, .color-class-2-1.hyperlink, .color-class-2-1.handout:hover {
     color: rgb(169, 21, 255);
 }
 
