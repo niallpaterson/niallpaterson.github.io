@@ -1,33 +1,3 @@
-/* BEGIN: WIP placeholder
-‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
-
-#in-progress-body {
-    background-color: black;
-}
-
-
-#work-in-progress-header {
-    width: 100vw;
-    height: 100vh;
-    background-color: black;
-}
-
-#work-in-progress-content {
-    color: white;
-    text-align: center;
-    padding-top: 20vh;
-    font-size: 5vw;
-    line-height: 2;
-}
-
-.fas.fa-hammer {
-    color: white;
-    font-size: 6vw;
-}
-
-/* END: WIP placeholder
-‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
-
 /*_________TABLE OF CONTENTS_________
     0. Meyer Reset
     1. Global Style
