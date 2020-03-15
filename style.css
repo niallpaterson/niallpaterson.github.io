@@ -109,6 +109,10 @@ body {
     background-color: rgb(31, 31, 31);
 }
 
+a {
+    text-decoration: none;
+}
+
 
 /* 2. Header/Sidebar
 ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
@@ -564,7 +568,6 @@ font-size: 1.25rem;
 .color-class-0-1 li:hover a, .color-class-0-1.hyperlink {
     color: rgb(245, 60, 152);
 }
-
 
 /* Pair 2 */
 
