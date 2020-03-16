@@ -524,7 +524,7 @@ font-size: 1.25rem;
 ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
 /* Invert B&W on hover */
 
-.link-list li:hover, .paper-download-links:hover {
+.link-list li:hover, .paper-download-links:hover, .latex-handout:hover {
     background-color: rgb(31, 31, 31);
 }
 
