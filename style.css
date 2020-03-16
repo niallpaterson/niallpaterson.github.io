@@ -274,11 +274,9 @@ h4 {
     line-height:1.75rem;
 }
 
-.right-latex-link  {
-margin-left: 0.5rem;
-} 
 
-.right-latex-link, .left-latex-link, .paper-link {
+
+.paper-link, .latex-handout {
     margin-right: 0.25rem;
     } 
 
@@ -550,7 +548,7 @@ font-size: 1.25rem;
 }
 
 .color-class-1-1 li:hover a, .color-class-1-1.hyperlink, .color-class-1-1.handout:hover {
-    color: rgb(253,95,0);
+    color: rgb(255, 98, 0);
 }
 
 /* Pair 3 */
