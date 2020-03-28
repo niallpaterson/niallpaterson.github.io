@@ -252,7 +252,7 @@ h4 {
 
 /* download buttons */
 
-.link-list, .paper-download-links {
+.link-list {
     margin-left: 5vw;
 }
 
@@ -271,23 +271,28 @@ h4 {
     border-color: rgb(31, 31, 31); 
     /* center icons */
     text-align: center;
-    line-height:1.75rem;
+    line-height: 1.75rem;
 }
 
 
 
 .paper-link, .latex-handout {
     margin-right: 0.25rem;
-    } 
+} 
+        
 
 /* .paper-download-links */
 
-.link-list a, .paper-download-links a {
-/* icons */
-color: rgb(31, 31, 31);
-font-size: 1.25rem;
+.link-list a {
+    /* icons */
+    color: rgb(31, 31, 31);
+    font-size: 1.15rem;
 }
 
+.link-list a i {
+/* center icons*/
+    line-height: 1.75rem;
+}
 
 /* 4. Individual Page Styling
 ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
@@ -361,7 +366,8 @@ font-size: 1.25rem;
     display: flex;
     flex-direction: row;
     justify-content: left;
-    } 
+} 
+
 
 
 /* 4.3 Projects
@@ -524,7 +530,7 @@ font-size: 1.25rem;
 ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*/
 /* Invert B&W on hover */
 
-.link-list li:hover, .paper-download-links:hover, .latex-handout:hover {
+.link-list li:hover, .latex-handout:hover {
     background-color: rgb(31, 31, 31);
 }
 
