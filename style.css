@@ -178,7 +178,6 @@ header {
 
 /* User hovers on link => link reverses color */ 
 
-
 .social-media-links li:hover{
      /* box */
      background-color :rgb(31, 31, 31);
@@ -252,14 +251,11 @@ h4 {
 
 /* download buttons */
 
-.link-list {
-    margin-left: 5vw;
-}
-
 /* center link descriptions */
 .link-list {
     line-height: 1.75rem;
     margin-top: 1rem;
+    margin-left: 5vw;
 }
 
 .link-list li {
@@ -273,8 +269,6 @@ h4 {
     text-align: center;
     line-height: 1.75rem;
 }
-
-
 
 .paper-link, .latex-handout {
     margin-right: 0.25rem;

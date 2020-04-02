@@ -14,7 +14,7 @@ if (localStorage.setting) {
 let localSetting = localStorage.getItem("setting");
 let parsedLocal = parseInt(localSetting); 
 settings.colorSetting = parsedLocal;
-console.log("Retrived Setting from Local Storage.");
+console.log("Retrieved Setting from Local Storage.");
 modifyStyle();
 }
 }
@@ -53,8 +53,8 @@ function modifyStyle() {
     // color 1 //
     document.getElementById("my-description").className = "my-description color-class-" + colorSettingString + "-0";
     document.getElementById("nav-links").className = "nav-links color-class-" + colorSettingString + "-0";
+
     // color 2 //
-    
     let linkLists = document.getElementsByClassName("link-list");
     for (i = 0; i < linkLists.length; i++) {
     linkLists[i].className = "link-list color-class-" + colorSettingString + "-1";
