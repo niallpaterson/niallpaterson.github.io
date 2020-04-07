@@ -544,20 +544,20 @@ h4 {
 /* Pair 2 */
 
 .color-class-1-0, .color-class-1-0 li a:hover  {
-    color: rgb(31, 226, 233);
+    color: rgb(91, 227, 218);
 }
 
 .color-class-1-1 li:hover a, .color-class-1-1.hyperlink, .color-class-1-1.handout:hover {
-    color: rgb(255, 98, 0);
+    color: rgb(247, 97, 3);
 }
 
 /* Pair 3 */
 
 .color-class-2-0, .color-class-2-0 li a:hover {
-    color: rgb(0, 255, 115);
+    color: rgb(68, 218, 27);
 }
 
 .color-class-2-1 li:hover a, .color-class-2-1.hyperlink, .color-class-2-1.handout:hover {
-    color: rgb(169, 21, 255);
+    color: rgb(200, 0, 255);
 }
 
