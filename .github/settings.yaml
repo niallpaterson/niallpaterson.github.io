@@ -1,0 +1,20 @@
+repository:
+
+# Labels: define labels for Issues and Pull Requests
+labels:
+  - name: feature
+    color: FEF903
+  - name: enhancement
+    color: 5BFFFF
+  - name: stretch
+    color: 80FF00
+  - name: bug
+    color: FF003E
+  - name: code aesthetics
+    color: FF029F
+  - name: optimisation
+    color: FF03DD
+  - name: test
+    color: 08FECA
+  - name: documentation
+    color: 004AFF
