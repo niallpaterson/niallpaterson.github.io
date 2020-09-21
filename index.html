@@ -1,73 +1,202 @@
 <!DOCTYPE html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Niall J. Paterson</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-        <!-- Icons -->
-        <link rel="stylesheet" href="icons/academicons/css/academicons.css"/>
-        <link rel="stylesheet" href="icons/fontawesome/css/all.css"/>
-        <!-- Font -->
-        <link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500,&display=swap" rel="stylesheet">
-    </head>
-    <body>
-    <div class="wrapper">
-        <header>
-            <h1 class="my-name">Niall J. Paterson</h1>
-            <h2 class="my-description color-class-0-0" id="my-description">Analytic philosopher <br> & software developer</h2>
-            <nav class="nav-links color-class-0-0" id="nav-links">
-                <ul>
-                    <li>
-                        <a class="nav-about" role="button" href="https://niallpaterson.github.io/"> About </a>
-                    </li>
-                    <li>
-                        <a class="nav-philosophy" role="button" href="https://niallpaterson.github.io/philosophy"> Philosophy </a>
-                    </li>
-                    <li>
-                        <a class="nav-projects" role="button" href="https://niallpaterson.github.io/projects"> Projects </a>
-                    </li>
-                    <li>
-                        <a class="LaTeX resources" role="button" href="https://niallpaterson.github.io/latex"> LaTeX </a>
-                    </li> 
-                    <li>
-                        <a class="Credits" role="button" href="https://niallpaterson.github.io/credits"> Credits </a>
-                    </li> 
-                </ul>
-            </nav>
-            <ul class="social-media-links">
-                <a class="email" role="button" href="mailto:niall.paterson@protonmail.com" target="_top"><li><i class="fas fa-envelope"></i></li></a>
-                <a class="philpapers" role="button" href="https://philpeople.org/profiles/niall-paterson" target="_blank"><li><i class ="ai ai-philpapers" aria-hidden="true"></i></li></a>
-                <a class="github" role="button" href="https://github.com/niallpaterson" target="_blank"><li><i class="fab fa-github" aria-hidden="true"></i></li></a>
-                <a class="linkedin" role="button" href="https://www.linkedin.com/in/niall-paterson-1793b81a2/" target="_blank"><li><i class="fab fa-linkedin" aria-hidden="true"></i></li></a>
-                <a class="cv" role="button" href="files/software_dev_CV_NiallPaterson.pdf" download><li><i class="ai ai-cv" aria-hidden="true"></i></li></a>
-                <a id="colorChanger" role="button"><li><i class="fa fa-question-circle" aria-hidden="true"></i></li></a>
-            </ul>
-            <div class="footer"> &copy Niall Paterson, 2020. </div>
-        </header>
+<html lang="en">
 
-        <main class="about-me">
-            <h2 class="main-title">
-            About me.
-            </h2>
-            <p>
-                I'm an academic philosopher and software developer in training. I was born
-                in Auckland, New Zealand, but grew up on the other side of the globe in
-                Gloucestershire, United Kingdom. I'm currently living in and around Bristol.<br>
-                <br>
-                I have a BA in philosophy from University College London (2013), and a PhD
-                in philosophy from the University of Bristol (2019). My doctoral supervisors
-                were <a class="hyperlink color-class-0-1" href="http://www.sowerbyprofessor.philosophyandmedicine.org/" target="_blank">Alexander Bird</a> and <a class="hyperlink color-class-0-1" href="https://jason-konek.squarespace.com/" target="_blank">Jason Konek</a>. 
-                After finishing my PhD I worked as a postdoctoral researcher on the ERC funded project 'Competence and Success in Epistemology and Beyond'
-                led by <a class="hyperlink color-class-0-1" href="https://blogs.helsinki.fi/mlasonen/" target="_blank">Maria Lasonen-Aarnio</a>.
-                I'm currently changing careers out of academia and into software development. If you want to get in touch, send me an e-mail <a class="hyperlink color-class-0-1" href="mailto:niall.paterson@protonmail.com" target="_top">here</a>.
-            </p>
-        </main>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="icons/fontawesome/css/all.css" />
+  <link rel="stylesheet" href="main.css">
+  <script src="https://cdn.jsdelivr.net/npm/@svgdotjs/svg.js@3.0/dist/svg.min.js"></script>
+  <script src="https://kit.fontawesome.com/8349255796.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+  <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+  <title>Niall J. Paterson</title>
+</head>
+
+<body class='light-mode-background'>
+
+  <nav class='light-mode-text light-mode-background'>
+    <ul>
+      <li><a href="#about">about</a></li>
+      <li><a href="#project-0">0</a></li>
+      <li><a href="#project-1">1</a></li>
+      <li><a href="#project-2">2</a></li>
+      <li><a href="#project-3">3</a></li>
+      <li><a href="#project-4">4</a></li>
+      <li><a href="#project-5">5</a></li>
+    </ul>
+  </nav>
+
+  <header class='light-mode-text transparent-background' id="fixed-header">
+    <div id="color-toggle"></div>
+    <div id="menu-toggle"></div>
+  </header>
+
+  <section class='light-mode-text light-mode-background' id="home">
+    <h1 class="name">niall j. paterson</h1>
+    <h2 class="dev-portfolio">development <br> portfolio</h2>
+    <footer id="home-footer">
+      <ul class="social-media-wrapper">
+        <li>
+          <a href="https://github.com/niallpaterson" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/niall-paterson-1793b81a2" target="_blank"><i
+              class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a href="assets/dev_cv_14_09.pdf" download><i class="fas fa-file-download"></i></a>
+          </li>
+        <li>
+          <a href="http://orcid.org/0000-0003-1178-0463" target="_blank"><i class="fab fa-orcid" aria-hidden="true"></i></a>
+        </li>
+      </ul>
+    </footer>
+  </section>
+
+  <section class='light-mode-text light-mode-background' id="about">
+    <div class="section-wrapper">
+      <div class="about-wrapper">
+        <header class="about-header">
+          <h2 id="about-title">about</h2>
+        <p id="about-content"> hey, 👋 I'm niall, a junior full stack developer with a passion for well tested development, agile management practices, and writing clean, functional code. i'm a creative, inquisitive, personable individual with strong problem solving skills. oh, and i ❤️ all things node and react 😁.</p>
+      </div>
+      <div id="languages-wrapper">
+        <p>i work with:</p>
+        <div id="languages-icon-wrapper">
+          <i class="fab fa-js-square"></i>
+          <i class="fab fa-node-js"></i>
+          <i class="fab fa-react"></i>
+          <i class="fab fa-git-alt"></i>
+          <i class="fab fa-yarn"></i>
+          <i class="fab fa-html5"></i>
+          <i class="fab fa-css3-alt"></i>
+          <i class="fab fa-sass"></i>
+          <i class="fab fa-npm"></i>
+          <i class="fab fa-sketch"></i>
+        </div>
+      </div>
     </div>
-        <script src="index.js"></script>
-    </body>
+      <footer><p> ↯ &nbsp; see my projects &nbsp; ↯ </p></footer>
+  </section>
+
+  <main class='light-mode-text light-mode-background'>
+
+    <div class="hidden-link-location" id="project-0" ></div>
+
+    <article class="project-wrapper light-mode-box-shadow">
+      <header class="project-header">
+        <h2 class="project-num">🧮 0 sigma-calc</h2>
+      </header>
+      <ul class="project-content">
+        <li>calculator written in javascript, html, and scss</li>
+        <li>unit tested with jest</li>
+        <li>calculates in sigma and pi notation</li>
+        <li>handles conventional order of operations</li>
+      </ul>
+      <div class="project-links">
+        <a href="https://niallpaterson.github.io/sigma-calc/" target="_blank"><i class="fas fa-rocket"></i></i></a>
+        <a href="https://github.com/niallpaterson/sigma-calc" target="_blank"><i class="fas fa-code"></i></a>
+      </div>
+    </article>
+
+    <div class="hidden-link-location" id="project-1" ></div>
+
+    <article class="project-wrapper light-mode-box-shadow">
+      <header class="section-header">
+        <h2 class="project-num">🦠 1 antibodies</h2>
+      </header>
+        <ul class="project-content">
+          <li>game written in javascript, html, and scss</li>
+          <li>stockpile resources and avoid infection </li>
+          <li>utilises the svg.js javascript libary</li>
+        </ul>
+      <div class="project-links">
+        <a href="https://niallpaterson.github.io/antibodies/" target="_blank"><i class="fas fa-rocket"></i></i></a>
+        <a href="https://github.com/niallpaterson/antibodies" target="_blank"><i class="fas fa-code"></i></a>
+      </div>
+    </article>
+
+    <div class="hidden-link-location" id="project-2" ></div>
+
+    <article class="project-wrapper light-mode-box-shadow">
+      <header class="section-header">
+        <h2 class="project-num">🏗 2 mk-js-webapp</h2>
+      </header>
+      <ul class="project-content">
+        <li>shell script written in zsh</li>
+        <li>generates javascript webapp templates</li>
+        <li>adds jest with babel-jest 
+        <li>adds eslint using the airbnb guidelines</li> 
+        <li>adds commit linting enforcing conventional commits</li>
+        <li>autopopulates github repository issue labels</li>
+      </ul>
+      <div class="project-links">
+        <a href="https://github.com/niallpaterson/mk-js-webapp/blob/master/README.md" target="_blank"><i class="fa fa-file-text-o"></i></i></a>
+        <a href="https://github.com/niallpaterson/mk-js-webapp" target="_blank"><i class="fas fa-code"></i></a>
+      </div>
+    </article>
+
+    <div class="hidden-link-location" id="project-3"></div>
+
+    <article class="project-wrapper light-mode-box-shadow">
+      <header class="section-header">
+        <h2 class="project-num">🧼 3 cleanup-react-app </h2>
+      </header>
+      <ul class="project-content">
+        <li> node.js package written using the filesystem and readline modules</li>
+        <li> cleanup your create-react-app template</li>
+        <li>removes commonly deleted files and boilerplate content</li>
+        <li> published on the npm registry</li>
+      </ul>
+      <div class="project-links">
+        <a href="https://www.npmjs.com/package/cleanup-react-app" target="_blank"><i class="fab fa-npm project-npm"></i></i></i></a>
+        <a href="https://github.com/niallpaterson/cleanup-react-app" target="_blank"><i class="fas fa-code"></i></a>
+      </div>
+    </article>
+
+    <div class="hidden-link-location" id="project-4" ></div>
+
+    <article class="project-wrapper light-mode-box-shadow">
+      <header class="section-header">
+        <h2 class="project-num">🗃 4 github-issue-manager</h2>
+      </header>
+      <ul class="project-content">
+        <li>webapp written in functional react.js and scss</li>
+        <li>unit tested with jest & enzyme</li>
+        <li>utilisies data fetching via the github api</li>
+        <li>utilisies the markdown-to-jsx and chroma-js packages</li>
+        <li>displays github repository issues</li>
+      </ul>
+      <div class="project-links">
+        <a href="https://niallpaterson.github.io/gh-issue-manager/" target="_blank"><i class="fas fa-rocket"></i></i></a>
+        <a href="https://github.com/niallpaterson/gh-issue-manager" target="_blank"><i class="fas fa-code"></i></a>
+      </div>
+    </article>
+
+    <div class="hidden-link-location" id="project-5" ></div>
+
+    <article class="project-wrapper light-mode-box-shadow">
+      <header class="section-header">
+        <h2 class="project-num">📊 5 integr8 hr</h2>
+      </header>
+      <ul class="project-content">
+        <li>client project for _nology written in classical react</li>
+        <li>human resources ticketing system mvp</li>
+        <li>defined data structure, managed firebase database</li>
+        <li>set up cicd pipeline</li>
+        <li>implemented ticketing dashboard functionality</li>
+      </ul>
+      <div class="project-links">
+        <a href="https://intergr8-42df9.web.app/" target="_blank"><i class="fas fa-rocket"></i></i></a>
+        <a href="https://github.com/nology-tech/intergr8" target="_blank"><i class="fas fa-code"></i></a>
+      </div>
+    </article>
+
+    <div class="hidden-link-location" id="project-bottom" ></div>
+
+  </main>
+
+  <script src="./js/main.js" type="module"></script>
+</body>
 </html>
-
-
-

@@ -1,0 +1,25 @@
+$multiple: 8;
+
+$cv-icon-font: 3.75px * $multiple;
+$icon-font: 4px * $multiple;
+$small-font: 0.125em * $multiple;
+$medium-font: 0.2em * $multiple;
+$large-font: 0.3em * $multiple;
+
+$tiny-margin: 1px * $multiple;
+$small-margin: 2px * $multiple;
+$medium-margin: 3px * $multiple;
+$large-margin: 4px * $multiple;
+
+$tiny-padding: 1px * $multiple;
+$small-padding: 3px * $multiple;
+$medium-padding: 6px * $multiple;
+$large-padding: 5px * $multiple;
+
+$tiny-width: 10px * $multiple;
+$small-width: 30px * $multiple;
+$medium-width: 60px * $multiple;
+$large-width: 65px * $multiple;
+
+$breakpoint-tablet: 600px;
+$breakpoint-desktop: 900px;

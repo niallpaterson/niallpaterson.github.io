@@ -1,0 +1,68 @@
+* {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: unset;
+}
+
+h1 {
+  font-size: $large-font;
+  text-align: center;
+}
+
+h2,
+li {
+  font-size: $medium-font;
+  text-align: center;
+}
+
+.fa-file-download {
+  font-size: $cv-icon-font;
+}
+
+header {
+  h2 {
+    text-align: left;
+  }
+}
+
+i,
+#languages-icon-wrapper i {
+  font-size: $icon-font;
+}
+
+.project-links a i {
+  font-size: $icon-font  * 0.8;
+  
+  &.project-npm {
+    font-size: $icon-font;
+  }
+}
+
+p {
+  font-size: $small-font;
+  text-align: justify;
+}
+
+#about {
+  p {
+    line-height: 30px;
+  }
+}
+
+.project-content li {
+  font-size: $small-font;
+}
+
+@media (min-width: $breakpoint-tablet) {
+  h1 {
+    font-size: $large-font * 1.125;
+  }
+  
+  h2,
+  li {
+    font-size: $medium-font * 1.125;
+  }
+
+  p {
+    font-size: $small-font * 1.125;
+  }
+}

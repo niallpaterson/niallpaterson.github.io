@@ -1,0 +1,165 @@
+h1,
+p,
+#languages-icon-wrapper {
+  display: inline-block;
+  margin: $small-margin;
+}
+
+#about-content p,
+.project-wrapper p {
+  margin-top: 0;
+}
+
+h1,
+h2 {
+  padding: $small-padding 0;
+}
+
+nav {
+  z-index: 998;
+  position: fixed;
+  height: 100vh;
+  left: -100vw;
+  width: 100vw;
+  transition: left 1s;
+
+  ul {
+    @include flex-column-around;
+    height: 80vh;
+    padding-top: 10vh;
+    opacity: 0;
+    transition: opacity 2s;
+  }
+}
+
+#fixed-header {
+  @include flex-row-between;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  z-index: 999;
+  background-color: transparent;
+
+  div {
+    margin: $small-margin;
+  };
+}
+
+#languages-wrapper {
+
+  @include flex-column-center;
+  text-align: center;
+  height: auto;
+  
+  p {
+    text-align: center;
+    width: $small-width;
+  }
+
+  #languages-icon-wrapper {
+    @include flex-row-between;
+    width: $small-width;
+    padding: 0 $small-padding;
+
+    i {
+      display: inline-block;
+      margin: $tiny-margin;
+    }
+  } 
+}
+
+section {
+  @include flex-column-center;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+.section-wrapper {
+  @include flex-column-center;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  background-color: transparent;
+
+  ul {
+    @include flex-row-between;
+    width: $small-width;
+    padding: $small-padding;
+  }
+
+  p {
+    text-align: center;
+  }
+}
+
+main {
+  @include flex-column-even;
+  width: 100vw;
+}
+
+.hidden-link-location {
+  height: 7.5vh;
+}
+
+article {
+  height: auto;
+  min-width: 95vw;
+  margin: 20vh $small-margin;
+  border: 1px solid transparent;
+  border-radius: 25px;
+  text-align: center;
+
+  header {
+    border: 1px solid transparent;
+    border-radius: 25px;
+    width: 100%;
+  }
+
+  .project-content {
+    display: inline-block;
+    margin: 0 $small-margin;
+    width: 95%;
+
+    li {
+      margin: 0 $large-margin;
+      line-height: 1.5;
+      text-align: left;
+      list-style-type: circle;
+    }
+  }
+
+  .project-links {
+    margin: 0;
+    padding: $small-padding;
+    background-color: transparent;
+    align-self: flex-end;
+
+    a {
+      margin: 15px;
+    }
+  }
+
+  &:last-of-type {
+    margin-bottom: 27.5vh;
+  }
+}
+
+.project-header {
+  @include flex-row-start;
+  position: static;
+}
+
+header {
+  h2 {
+    margin: 0 $small-margin;
+  }
+}
+
+#menu-toggle,
+#color-toggle,
+svg {
+  background: transparent;
+}
